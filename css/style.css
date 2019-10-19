@@ -22,6 +22,7 @@ body {
   margin: 0;
   font-family: 'Squada One', cursive;
   color: #222222;
+  scroll-behavior: smooth;
 }
 
 .left-container {
