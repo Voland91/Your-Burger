@@ -8,3 +8,7 @@ First stage was to design web page at Photoshop.
 Second stage was to implement it as clean HTML & CSS code.
 
 Now when I'm learning JavaScript I'd like to add some extras in JS for practice.
+
+
+// 23.10.19 //
+Added some technical and content changes after consulting and code review at some facebook's groups.
