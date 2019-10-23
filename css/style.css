@@ -6,9 +6,11 @@ html {
   box-sizing: inherit;
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
-@keyframes line {
+/* animation settings for underline in nav */
+@keyframes underline {
   from {
     width: 0%;
   }
@@ -18,11 +20,8 @@ html {
 }
 
 body {
-  padding: 0;
-  margin: 0;
   font-family: 'Squada One', cursive;
   color: #222222;
-  scroll-behavior: smooth;
 }
 
 .left-container {
@@ -38,8 +37,6 @@ body {
 .header {
   background: #FFC000;
   display: flex;
-  padding: 0;
-  margin: 0;
   height: 100px;
   align-items: center;
   justify-content: center;
@@ -70,6 +67,7 @@ body {
   display: block;
   position: relative;
   justify-items: right;
+  /* animated underline in nav */
 }
 
 .nav_link:after {
@@ -85,14 +83,13 @@ body {
 
 .nav_link:hover:after {
   background: #fff;
-  animation-name: line;
+  animation-name: underline;
   animation-duration: .5s;
 }
 
 .hero {
   background: #FFC000;
   padding: 150px 1rem;
-  margin: 0;
   display: flex;
   grid-column-gap: 3rem;
   align-items: center;
@@ -106,6 +103,7 @@ body {
 .hero_header {
   font-size: 120px;
   line-height: 0.9;
+  white-space: pre-line;
 }
 
 .hero_description {
@@ -119,7 +117,6 @@ body {
 .our-story {
   background: #fff;
   padding: 120px 1rem;
-  margin: 0;
   display: flex;
   grid-column-gap: 3rem;
   align-items: center;
@@ -129,6 +126,7 @@ body {
 .our-story_header {
   font-size: 60px;
   line-height: 0.9;
+  margin-bottom: 20px;
 }
 
 .our-story_description {
@@ -138,6 +136,7 @@ body {
   line-height: 1.1;
   color: #222222;
   text-align: justify;
+  margin-bottom: 20px;
 }
 
 .our-story_image {
@@ -148,7 +147,6 @@ body {
   background: #FFC000;
   padding: 120px 1rem;
   max-width: auto;
-  margin: 0 auto;
   display: flex;
   grid-column-gap: 3rem;
   align-items: center;
@@ -158,9 +156,11 @@ body {
 .recipe_header {
   font-size: 60px;
   line-height: 0.9;
+  margin-bottom: 20px;
 }
 
 .recipe-list_item_big {
+  list-style-position: inside;
   font-size: 2rem;
   font-weight: 700;
   line-height: 1;
@@ -168,19 +168,20 @@ body {
 }
 
 .recipe-list_item_small {
+  margin-left: 25px;
   font-family: 'Quicksand', sans-serif;
   font-size: 1rem;
   font-weight: 700;
   line-height: 1.2;
   color: #fff;
   list-style-type: none;
+  margin-bottom: 20px;
 }
 
 .where {
   background: #fff;
   padding: 120px 1rem;
   max-width: auto;
-  margin: 0 auto;
   display: flex;
   grid-column-gap: 3rem;
   align-items: center;
@@ -199,6 +200,7 @@ body {
   font-weight: 700;
   line-height: 1;
   color: #acacac;
+  margin-bottom: 20px;
 }
 
 .where_description {
@@ -207,6 +209,7 @@ body {
   font-weight: 700;
   line-height: 1.1;
   color: #222222;
+  margin-bottom: 20px;
 }
 
 .where_description a:link {
@@ -233,7 +236,6 @@ footer {
   background: #FFC000;
   padding: 50px;
   max-width: auto;
-  margin: 0 auto;
   display: flex;
   grid-column-gap: 3rem;
   align-items: center;
@@ -241,14 +243,13 @@ footer {
 }
 
 .footer_image {
-  padding: 0;
-  margin: 0;
   justify-content: right;
 }
 
 .footer_header {
   font-size: 50px;
   line-height: 0.9;
+  margin-bottom: 20px;
 }
 
 .footer_item_big {
@@ -281,7 +282,7 @@ footer {
 
 .footer_item_small {
   font-family: 'Quicksand', sans-serif;
-  font-size: 20px;
+  font-size: 1rem;
   font-weight: 700;
   line-height: 1;
   color: #fff;

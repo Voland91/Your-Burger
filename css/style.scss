@@ -1,8 +1,3 @@
-//  * {
-//      padding: 0;
-//      margin: 0;
-//  }
-
  html {
     box-sizing: border-box;
   }
@@ -10,10 +5,12 @@
   *, *::before, *::after {
     box-sizing: inherit;
     padding: 0;
-     margin: 0;
+    margin: 0;
+    scroll-behavior: smooth;
   }
 
-@keyframes line{
+  /* animation settings for underline in nav */
+@keyframes underline{
     from{
         width: 0%;
     }
@@ -23,11 +20,9 @@
 }
 
  body {
-     padding: 0;
-     margin: 0;
      font-family: 'Squada One', cursive;
      color: #222222;
-     scroll-behavior: smooth;
+ 
  }
 
  .left-container {
@@ -43,8 +38,6 @@
  .header {
      background: #FFC000;
      display: flex;
-     padding: 0;
-     margin: 0;
      height: 100px;
      align-items: center;
      justify-content: center;
@@ -58,6 +51,7 @@
  .nav {
      display: flex;
      font-size: 1.5rem;
+     
  }
 
  .nav_ul {
@@ -75,7 +69,9 @@
      display: block;
      position: relative;
      justify-items: right;
-
+    
+     
+/* animated underline in nav */
      &:after {
          content: " ";
          display: block;
@@ -89,17 +85,14 @@
 
      &:hover:after {
          background: #fff;
-         animation-name: line;
+         animation-name: underline;
          animation-duration: .5s;
      }
  }
 
- 
-
  .hero {
      background: #FFC000;
      padding: 150px 1rem;
-     margin: 0;
      display: flex;
      grid-column-gap: 3rem;
      align-items: center;
@@ -113,6 +106,7 @@
  .hero_header {
      font-size: 120px;
      line-height: 0.9;
+     white-space: pre-line;
  }
 
  .hero_description {
@@ -126,16 +120,16 @@
  .our-story {
      background: #fff;
      padding: 120px 1rem;
-     margin: 0;
      display: flex;
      grid-column-gap: 3rem;
      align-items: center;
-     justify-content: center;
+     justify-content: center;   
  }
 
  .our-story_header {
      font-size: 60px;
      line-height: 0.9;
+     margin-bottom: 20px;
  }
 
  .our-story_description {
@@ -145,6 +139,7 @@
      line-height: 1.1;
      color: #222222;
      text-align: justify;
+     margin-bottom: 20px;
  }
 
  .our-story_image {
@@ -155,7 +150,6 @@
      background: #FFC000;
      padding: 120px 1rem;
      max-width: auto;
-     margin: 0 auto;
      display: flex;
      grid-column-gap: 3rem;
      align-items: center;
@@ -165,9 +159,11 @@
  .recipe_header {
      font-size: 60px;
      line-height: 0.9;
+     margin-bottom: 20px;
  }
 
  .recipe-list_item_big {
+    list-style-position: inside;
      font-size: 2rem;
      font-weight: 700;
      line-height: 1;
@@ -175,19 +171,20 @@
  }
 
  .recipe-list_item_small {
+     margin-left: 25px;
      font-family: 'Quicksand', sans-serif;
      font-size: 1rem;
      font-weight: 700;
      line-height: 1.2;
      color: #fff;
      list-style-type: none;
+     margin-bottom: 20px;
  }
 
  .where {
      background: #fff;
      padding: 120px 1rem;
      max-width: auto;
-     margin: 0 auto;
      display: flex;
      grid-column-gap: 3rem;
      align-items: center;
@@ -206,6 +203,7 @@
      font-weight: 700;
      line-height: 1;
      color: #acacac;
+     margin-bottom: 20px;
  }
 
  .where_description {
@@ -214,7 +212,7 @@
      font-weight: 700;
      line-height: 1.1;
      color: #222222;
-
+     margin-bottom: 20px;
  }
 
  .where_description a:link {
@@ -241,7 +239,6 @@
      background: #FFC000;
      padding: 50px;
      max-width: auto;
-     margin: 0 auto;
      display: flex;
      grid-column-gap: 3rem;
      align-items: center;
@@ -249,14 +246,13 @@
  }
 
  .footer_image {
-     padding: 0;
-     margin: 0;
-     justify-content: right;
+ justify-content: right;
  }
 
  .footer_header {
      font-size: 50px;
      line-height: 0.9;
+     margin-bottom: 20px;
  }
 
  .footer_item_big {
@@ -289,11 +285,10 @@
 
  .footer_item_small {
      font-family: 'Quicksand', sans-serif;
-     font-size: 20px;
+     font-size: 1rem;
      font-weight: 700;
      line-height: 1;
      color: #fff;
-
  }
 
  @media (max-width: 1120px) {
