@@ -22,7 +22,6 @@
  body {
      font-family: 'Squada One', cursive;
      color: #222222;
- 
  }
 
  .left-container {
@@ -158,27 +157,23 @@
 
  .recipe_header {
      font-size: 60px;
-     line-height: 0.9;
-     margin-bottom: 20px;
  }
 
- .recipe-list_item_big {
+ .recipe-list_item {
+    margin-top: 20px;
     list-style-position: inside;
-     font-size: 2rem;
-     font-weight: 700;
-     line-height: 1;
-     color: #222222;
- }
-
- .recipe-list_item_small {
-     margin-left: 25px;
-     font-family: 'Quicksand', sans-serif;
-     font-size: 1rem;
-     font-weight: 700;
-     line-height: 1.2;
-     color: #fff;
-     list-style-type: none;
-     margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #222222;
+    white-space: pre-line;
+ 
+     & small{
+        margin-left: 25px;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 15px;
+        font-weight: 700;
+        color: #fff;        
+     }
  }
 
  .where {
@@ -246,7 +241,7 @@
  }
 
  .footer_image {
- justify-content: right;
+    justify-content: right;
  }
 
  .footer_header {
@@ -359,12 +354,12 @@
          font-size: 40px;
      }
 
-     .recipe-list_item_big {
+     .recipe-list_item {
          font-size: 1.7rem;
-     }
 
-     .recipe-list_item_small {
-         font-size: .8rem;
+         & small{
+            font-size: .8rem;
+         }
      }
 
      .where {
@@ -447,6 +442,10 @@
          font-size: 30px;
          text-align: center;
      }
+
+     .recipe-list_item{
+        text-align: center;
+    }
 
      .where {
          flex-direction: column-reverse;
