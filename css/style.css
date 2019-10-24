@@ -107,11 +107,21 @@ body {
 }
 
 .hero_description {
+  width: 540px;
   font-family: 'Quicksand', sans-serif;
   font-size: 115px;
   font-weight: 700;
   line-height: 1;
   color: #fff;
+}
+
+.hero_cursor {
+  opacity: 0;
+  transition: .2s;
+}
+
+.hero_cursor.active {
+  opacity: 1;
 }
 
 .our-story {
@@ -163,7 +173,6 @@ body {
   font-size: 2rem;
   font-weight: 700;
   color: #222222;
-  white-space: pre-line;
 }
 
 .recipe-list_item small {
@@ -172,6 +181,7 @@ body {
   font-size: 15px;
   font-weight: 700;
   color: #fff;
+  display: block;
 }
 
 .where {
@@ -339,7 +349,7 @@ footer {
     font-size: 1.7rem;
   }
   .recipe-list_item small {
-    font-size: .8rem;
+    font-size: 1rem;
   }
   .where {
     padding: 90px 1rem;
@@ -348,7 +358,7 @@ footer {
     font-size: 40px;
   }
   .where_description_small {
-    font-size: .8rem;
+    font-size: 1rem;
   }
   .where_description {
     font-size: 1.1rem;
@@ -369,18 +379,19 @@ footer {
     padding: 0 1rem 0 0;
   }
   .logo {
-    width: 80px;
+    width: 85px;
   }
   .hero {
     flex-direction: column;
-    padding: 90px;
+    padding: 20px 0 60px 0;
   }
   .hero_header {
     font-size: 75px;
+    text-align: center;
   }
   .hero_description {
+    width: auto;
     font-size: 65px;
-    justify-content: center;
   }
   .our-story {
     flex-direction: column-reverse;
@@ -395,7 +406,7 @@ footer {
   }
   .recipe {
     flex-direction: column;
-    padding: 60px 20px;
+    padding: 60px 10;
   }
   .recipe_image {
     padding: 0 0 30px 0;
@@ -406,6 +417,9 @@ footer {
   }
   .recipe-list_item {
     text-align: center;
+  }
+  .recipe-list_item small {
+    margin-left: 0;
   }
   .where {
     flex-direction: column-reverse;
@@ -434,6 +448,6 @@ footer {
   }
   .footer_item_small {
     text-align: center;
-    font-size: .9rem;
+    font-size: 1rem;
   }
 }

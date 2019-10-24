@@ -50,7 +50,6 @@
  .nav {
      display: flex;
      font-size: 1.5rem;
-     
  }
 
  .nav_ul {
@@ -109,12 +108,23 @@
  }
 
  .hero_description {
+     width: 540px;
      font-family: 'Quicksand', sans-serif;
      font-size: 115px;
      font-weight: 700;
      line-height: 1;
      color: #fff;
- }
+    }
+ 
+     .hero_cursor {
+    opacity: 0;
+    transition: .2s;
+}
+
+.hero_cursor.active {
+        opacity: 1;
+       }
+   
 
  .our-story {
      background: #fff;
@@ -165,14 +175,14 @@
     font-size: 2rem;
     font-weight: 700;
     color: #222222;
-    white-space: pre-line;
  
      & small{
         margin-left: 25px;
         font-family: 'Quicksand', sans-serif;
         font-size: 15px;
         font-weight: 700;
-        color: #fff;        
+        color: #fff;   
+        display: block;     
      }
  }
 
@@ -358,7 +368,7 @@
          font-size: 1.7rem;
 
          & small{
-            font-size: .8rem;
+            font-size: 1rem;
          }
      }
 
@@ -371,7 +381,7 @@
      }
 
      .where_description_small {
-         font-size: .8rem;
+         font-size: 1rem;
      }
 
      .where_description {
@@ -398,21 +408,22 @@
         padding: 0 1rem 0 0;}
 
         .logo {
-            width: 80px;
+            width: 85px;
         }
 
      .hero {
          flex-direction: column;
-         padding: 90px;
+         padding: 20px 0 60px 0;
      }
 
      .hero_header {
          font-size: 75px;
+         text-align: center;
      }
 
      .hero_description {
-         font-size: 65px;
-         justify-content: center;
+        width: auto;  
+        font-size: 65px;
      }
 
      .our-story {
@@ -431,7 +442,7 @@
 
      .recipe {
          flex-direction: column;
-         padding: 60px 20px;
+         padding: 60px 10;
      }
 
      .recipe_image {
@@ -445,6 +456,10 @@
 
      .recipe-list_item{
         text-align: center;
+
+        & small{
+            margin-left: 0;
+        }
     }
 
      .where {
@@ -481,6 +496,6 @@
 
      .footer_item_small {
          text-align: center;
-         font-size: .9rem;
+         font-size: 1rem;
      }
  }

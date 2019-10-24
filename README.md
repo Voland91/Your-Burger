@@ -10,5 +10,9 @@ Second stage was to implement it as clean HTML & CSS code.
 Now when I'm learning JavaScript I'd like to add some extras in JS for practice.
 
 
-// 23.10.19 //
+// UPDATE 23.10.19 //
 Added some technical and content changes after consulting and code review at some facebook's groups.
+
+
+// UPDATE 24.10.19 //
+First JS implementation - added typing text effect at one of the main's text + blinking cursor at the end.
