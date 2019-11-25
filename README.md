@@ -16,3 +16,7 @@ Added some technical and content changes after consulting and code review at som
 
 // UPDATE 24.10.19 //
 First JS implementation - added typing text effect at one of the main's text + blinking cursor at the end.
+
+
+// UPDATE 25.11.19 //
+Added some BEM metodology which was most repeated by my code reviewers. I think is great, it is very logical and it shortened my CSS code by more than 100 lines which is awesome!
