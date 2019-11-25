@@ -1,7 +1,7 @@
 /* typing effect in hero */
 
-const spnText = document.querySelector('.hero_text');
-const spnCursor = document.querySelector('.hero_cursor');
+const spnText = document.querySelector('.hero__text');
+const spnCursor = document.querySelector('.hero__cursor');
 const txt = "BURGERS";
 
 // parameteres
