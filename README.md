@@ -1,6 +1,6 @@
 # Your-Burger
 First web page created by my own just for fun and practice (it isn't real existing business), you can see demo at:
-www.yourburger.pl
+https://voland91.github.io/Your-Burger/
 
 My intencion was to create a nice looking web page by my own, using tools wich I'm learning every day.
 
